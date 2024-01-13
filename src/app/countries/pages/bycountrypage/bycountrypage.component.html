@@ -1,0 +1,18 @@
+<h2>POR PAIS</h2>
+<hr>
+<div class="row">
+    <div class="col">
+<app-searchbox
+(ondebounce)="searchbycountry($event)"
+[initiValvalue]="initiValvalue"
+placeholder="Buscar por pais"
+></app-searchbox>
+</div>
+</div>
+<div class="row">
+    <div class="col">
+        <hr>
+        <country-table [countrieschild]="country"></country-table>
+
+  </div>
+</div>

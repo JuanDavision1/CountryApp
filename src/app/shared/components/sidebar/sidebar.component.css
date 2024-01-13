@@ -1,0 +1,47 @@
+h2 {
+    font-weight: 800;
+    font-size: 40px;
+    text-decoration: bold;
+    text-align: center;
+    background: #097D33;
+    background: radial-gradient(circle farthest-corner at center center, #097D33 0%, #37CF19 100%);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+}
+
+ul {
+    display: flex;
+    flex-flow: wrap row;
+    justify-content: center;
+    
+}
+ul li{
+    border-radius: 10px;
+    height: 45px;
+    width: 15%;
+    text-align: center;
+    text-decoration: bold;
+   margin-right: 20px; 
+cursor: pointer;
+}
+.list-group-item.active{
+  background: rgb(2,0,36);
+  background: linear-gradient(90deg, rgba(2,0,36,1) 0%, rgba(36,121,9,1) 100%, rgba(0,212,255,1) 100%);
+  border-color:white;
+}
+@keyframes aparecerDesdeIzquierda {
+    from {
+      width: 0;
+    }
+    to {
+      width: 100%;
+    }
+  }
+  
+  hr {
+    animation: aparecerDesdeIzquierda 4s ease-out;
+    border: none;
+    height: 2px;
+    background-color: #60ab7c;
+    -webkit-animation: aparecerDesdeIzquierda 4s ease-out; /* Prefijo para WebKit (Chrome, Safari, etc.) */
+  }

@@ -1,0 +1,21 @@
+<H2>POR CAPITAL </H2>
+<hr>
+<div class="row">
+    <div class="col">
+        <app-searchbox 
+     
+        (ondebounce)="serachbycapital($event)"
+        [initiValvalue]="initiValvalue"
+        placeholder="Buscar por capital"></app-searchbox>
+    </div>
+</div>
+<div class="row">
+    <div class="col">
+        <hr>
+        <app-loading-spinner *ngIf="isLoading"></app-loading-spinner>
+        <country-table [countrieschild]="countries"></country-table>
+        <!-- <ul>
+            <li *ngFor="let item of countries">{{item.capital}}</li>
+        </ul> -->
+  </div>
+</div>
